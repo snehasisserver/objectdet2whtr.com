@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kitchen :: Object Detection</title>
+    <link rel="icon" href="images/Kirc.jpg">
+</head>
+<body>
+    <div class="container">
+        <span id="span1">
+            <h1 class="heading">Object Detection from Snehasis</h1>
+          </span>
+          <br>
+          <a class="btn btn-danger" style="border-radius: 10px; width: fit-content; padding-left: 10px; padding-right: 10px;float:right;" href="index.html">Back</a>
+    </div>
+    <script>
+        var img2="";
+        function preload(){
+            img2 = loadImage("images/Kirc.jpg");
+        }
+        function setup(){
+            canvas = createCanvas(500,500);
+            canvas.center();
+
+        }
+        function draw(){
+          image(img2,0,0,500,500)
+          //draw
+          fill("black")
+          stroke("red")
+          text("Water Filter",140,12)
+          text("Electrical switch",350,225)
+          noFill();
+          rect(140,15,200,300)
+          rect(350,230,90,90)
+        }
+    </script>
+</body>
+</html>

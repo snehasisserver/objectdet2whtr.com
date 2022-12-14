@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Fan and light :: Object Detection</title>
+  <link rel="icon" href="images/Light.jpg">
+</head>
+<body><div class="container">
+    <span id="span1">
+        <h1 class="heading">Object Detection from Snehasis</h1>
+      </span>
+      <br>
+          <a class="btn btn-danger" style="border-radius: 10px; width: fit-content; padding-left: 10px; padding-right: 10px;float:right;" href="index.html">Back</a>
+</div>
+    <script>
+        var img3="";
+        function preload(){
+            img3 = loadImage("images/Light.jpg")
+        }
+        function setup(){
+            canvas = createCanvas(500,500);
+            canvas.center();
+
+        }
+        function draw(){
+           image(img3,0,0,500,500);
+           fill("red");
+           stroke("red");
+           text("Fan",120,70);
+           text("Light 2",280,400)
+           text("Light 1",70,216)
+           noFill();
+           rect(120,75,260,230)
+           quad(290,410,480,360,490,430,290,440)
+           quad(70,220,140,265,120,360,60,298)
+        }
+    </script>
+</body>
+</html>

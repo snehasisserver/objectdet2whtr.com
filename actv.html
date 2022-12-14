@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AC:: Object Detection</title>
+    <link rel="icon" href="images/Ac.jpg">
+</head>
+<body>
+    <div class="container">
+        <span id="span1">
+            <h1 class="heading">Object Detection from Snehasis</h1>
+          </span>
+          <br>
+          <a class="btn btn-danger" style="border-radius: 10px; width: fit-content; padding-left: 10px; padding-right: 10px;float:right;" href="index.html">Back</a>
+    </div>
+    <script>
+        var img4="";
+        var img
+        function preload(){
+           img4 = loadImage("images/Ac.jpg")
+        }
+        function setup(){
+            canvas = createCanvas(500,500);
+            canvas.center();
+
+        }
+        function draw(){
+image(img4,0,0,500,500)
+fill("white");
+stroke("red")
+text("Air Conditioner",45,165)
+noFill();
+
+rect(45,170,370,190)
+        }
+    </script>
+</body>
+</html>

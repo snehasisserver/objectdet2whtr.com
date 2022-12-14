@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Books :: Object detection</title>
+    <link rel="icon" href="images/Book.jpeg">
+</head>
+<body>
+    <div class="container">
+        <span id="span1">
+            <h1 class="heading">Object Detection from Snehasis</h1>
+          </span>
+          <br>
+          <a class="btn btn-danger" style="border-radius: 10px; width: fit-content; padding-left: 10px; padding-right: 10px;float:right;" href="index.html">Back</a>
+    </div>
+    <script>
+        var img5 = "";
+        function preload(){
+img5 = loadImage("images/Book.jpeg")
+        }
+        function setup(){
+            canvas = createCanvas(500,500);
+            canvas.center();
+
+        }
+        function draw(){
+        image(img5,0,0,500,500);
+        fill("white");
+        stroke("red");
+        text("Book 1",0.15,100);
+        text("Copy",160,40);
+        text("Book 2",382,145);
+        text("Book 3",170,265);
+        text("Pen",166,145);
+        text("Bottle",292,160);
+        noFill();
+        rect(0.15,105,150,140);
+        quad(160.81632653061226, 47.48979591836735,290.3061224489796, 28.06122448979592,336.2244897959184, 146.42857142857144,205.6122448979592, 168.87755102040816);
+    quad(382.14285714285717,148.46938775510205,491.3265306122449, 156.6326530612245,498.46938775510205, 277.0408163265306,378.0612244897959, 267.8571428571429);   
+quad(170.91836734693877, 266.83673469387753, 81.12244897959184, 372.9591836734694, 182.14285714285714, 423.9795918367347, 269.8979591836735, 304.59183673469386);   
+quad(166.83673469387756, 146.42857142857144,189.28571428571428, 144.3877551020408, 222.9591836734694, 218.87755102040816, 199.48979591836735,227.0408163265306);
+quad(292.3469387755102, 162.75510204081633,353.57142857142856, 161.73469387755102, 369.8979591836735, 341.3265306122449, 284.18367346938777, 338.265306122449);
+}
+        function mousePressed(){
+            console.log(mouseX,mouseY)
+        }
+    </script>
+</body>
+</html>
